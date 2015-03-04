@@ -17,6 +17,7 @@
   },
   "homepage": "https://github.com/CoryWilson/ASL_Node_Project",
   "dependencies": {
+    "ejs": "^2.3.1",
     "express": "^4.12.2"
   }
 }
