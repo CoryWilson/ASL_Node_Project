@@ -1,0 +1,703 @@
+0 info it worked if it ends with ok
+1 verbose cli [ '/usr/local/bin/node',
+1 verbose cli   '/usr/local/bin/npm',
+1 verbose cli   'install',
+1 verbose cli   'express-generator' ]
+2 info using npm@2.5.1
+3 info using node@v0.12.0
+4 silly cache add args [ 'express-generator', null ]
+5 verbose cache add spec express-generator
+6 silly cache add parsed spec { raw: 'express-generator',
+6 silly cache add   scope: null,
+6 silly cache add   name: 'express-generator',
+6 silly cache add   rawSpec: '',
+6 silly cache add   spec: '*',
+6 silly cache add   type: 'range' }
+7 verbose addNamed express-generator@*
+8 silly addNamed semver.valid null
+9 silly addNamed semver.validRange *
+10 silly addNameRange { name: 'express-generator', range: '*', hasData: false }
+11 silly mapToRegistry name express-generator
+12 silly mapToRegistry using default registry
+13 silly mapToRegistry registry https://registry.npmjs.org/
+14 silly mapToRegistry uri https://registry.npmjs.org/express-generator
+15 verbose addNameRange registry:https://registry.npmjs.org/express-generator not in flight; fetching
+16 verbose request uri https://registry.npmjs.org/express-generator
+17 verbose request no auth needed
+18 info attempt registry request try #1 at 10:16:17 AM
+19 verbose request id 964490b2cb50eb29
+20 http request GET https://registry.npmjs.org/express-generator
+21 http 200 https://registry.npmjs.org/express-generator
+22 silly get cb [ 200,
+22 silly get   { date: 'Thu, 05 Mar 2015 15:16:17 GMT',
+22 silly get     server: 'CouchDB/1.6.1 (Erlang OTP/R14B04)',
+22 silly get     etag: '"3HNPNA0LXTFF4XJKQ2CRTAS93"',
+22 silly get     'content-type': 'application/json',
+22 silly get     'cache-control': 'max-age=60',
+22 silly get     'content-length': '23774',
+22 silly get     'accept-ranges': 'bytes',
+22 silly get     via: '1.1 varnish',
+22 silly get     age: '0',
+22 silly get     'x-served-by': 'cache-iad2145-IAD',
+22 silly get     'x-cache': 'MISS',
+22 silly get     'x-cache-hits': '0',
+22 silly get     'x-timer': 'S1425568576.949956,VS0,VE67',
+22 silly get     vary: 'Accept',
+22 silly get     'keep-alive': 'timeout=10, max=50',
+22 silly get     connection: 'Keep-Alive' } ]
+23 verbose get saving express-generator to /Users/Cory/.npm/registry.npmjs.org/express-generator/.cache.json
+24 silly addNameRange number 2 { name: 'express-generator', range: '*', hasData: true }
+25 silly addNameRange versions [ 'express-generator',
+25 silly addNameRange   [ '1.0.0',
+25 silly addNameRange     '3.0.0',
+25 silly addNameRange     '4.0.0',
+25 silly addNameRange     '4.2.0',
+25 silly addNameRange     '4.8.0',
+25 silly addNameRange     '4.9.0',
+25 silly addNameRange     '4.10.0',
+25 silly addNameRange     '4.11.0',
+25 silly addNameRange     '4.11.1',
+25 silly addNameRange     '4.11.2',
+25 silly addNameRange     '4.12.0' ] ]
+26 verbose addNamed express-generator@4.12.0
+27 silly addNamed semver.valid 4.12.0
+28 silly addNamed semver.validRange 4.12.0
+29 silly mapToRegistry name express-generator
+30 silly mapToRegistry using default registry
+31 silly mapToRegistry registry https://registry.npmjs.org/
+32 silly mapToRegistry uri https://registry.npmjs.org/express-generator
+33 verbose addRemoteTarball https://registry.npmjs.org/express-generator/-/express-generator-4.12.0.tgz not in flight; adding
+34 verbose addRemoteTarball [ 'https://registry.npmjs.org/express-generator/-/express-generator-4.12.0.tgz',
+34 verbose addRemoteTarball   '77a3337cf02fba2d59e926d7296076b19ac00f58' ]
+35 info retry fetch attempt 1 at 10:16:17 AM
+36 info attempt registry request try #1 at 10:16:17 AM
+37 http fetch GET https://registry.npmjs.org/express-generator/-/express-generator-4.12.0.tgz
+38 http fetch 200 https://registry.npmjs.org/express-generator/-/express-generator-4.12.0.tgz
+39 silly fetchAndShaCheck shasum 77a3337cf02fba2d59e926d7296076b19ac00f58
+40 verbose addTmpTarball /var/folders/zj/f_l4bkxs3jj5bgkc59xc7ypm0000gn/T/npm-3163-8e46bbef/registry.npmjs.org/express-generator/-/express-generator-4.12.0.tgz not in flight; adding
+41 verbose addTmpTarball already have metadata; skipping unpack for express-generator@4.12.0
+42 silly cache afterAdd express-generator@4.12.0
+43 verbose afterAdd /Users/Cory/.npm/express-generator/4.12.0/package/package.json not in flight; writing
+44 verbose afterAdd /Users/Cory/.npm/express-generator/4.12.0/package/package.json written
+45 silly install resolved [ { name: 'express-generator',
+45 silly install resolved     description: 'Express\' application generator',
+45 silly install resolved     version: '4.12.0',
+45 silly install resolved     author: { name: 'TJ Holowaychuk', email: 'tj@vision-media.ca' },
+45 silly install resolved     contributors: [ [Object], [Object], [Object], [Object], [Object], [Object] ],
+45 silly install resolved     keywords:
+45 silly install resolved      [ 'express',
+45 silly install resolved        'framework',
+45 silly install resolved        'sinatra',
+45 silly install resolved        'web',
+45 silly install resolved        'rest',
+45 silly install resolved        'restful',
+45 silly install resolved        'router',
+45 silly install resolved        'app',
+45 silly install resolved        'api' ],
+45 silly install resolved     repository: { type: 'git', url: 'https://github.com/expressjs/generator' },
+45 silly install resolved     license: 'MIT',
+45 silly install resolved     dependencies: { commander: '2.6.0', mkdirp: '0.5.0', 'sorted-object': '1.0.0' },
+45 silly install resolved     main: 'bin/express',
+45 silly install resolved     preferGlobal: true,
+45 silly install resolved     bin: { express: './bin/express' },
+45 silly install resolved     devDependencies: { mocha: '~2.1.0', rimraf: '~2.2.8', supertest: '~0.15.0' },
+45 silly install resolved     engines: { node: '>= 0.10' },
+45 silly install resolved     files: [ 'LICENSE', 'bin/', 'templates/' ],
+45 silly install resolved     scripts:
+45 silly install resolved      { test: 'mocha --reporter spec --bail --check-leaks test/',
+45 silly install resolved        'test-ci': 'mocha --reporter spec --check-leaks test/' },
+45 silly install resolved     gitHead: '03660eb4572f62a23b436639e9015eb92cf08102',
+45 silly install resolved     bugs: { url: 'https://github.com/expressjs/generator/issues' },
+45 silly install resolved     homepage: 'https://github.com/expressjs/generator',
+45 silly install resolved     _id: 'express-generator@4.12.0',
+45 silly install resolved     _shasum: '77a3337cf02fba2d59e926d7296076b19ac00f58',
+45 silly install resolved     _from: 'express-generator@*',
+45 silly install resolved     _npmVersion: '1.4.28',
+45 silly install resolved     _npmUser: { name: 'dougwilson', email: 'doug@somethingdoug.com' },
+45 silly install resolved     maintainers: [ [Object], [Object], [Object], [Object], [Object], [Object] ],
+45 silly install resolved     dist:
+45 silly install resolved      { shasum: '77a3337cf02fba2d59e926d7296076b19ac00f58',
+45 silly install resolved        tarball: 'http://registry.npmjs.org/express-generator/-/express-generator-4.12.0.tgz' },
+45 silly install resolved     directories: {},
+45 silly install resolved     _resolved: 'https://registry.npmjs.org/express-generator/-/express-generator-4.12.0.tgz' } ]
+46 info install express-generator@4.12.0 into /Users/Cory/Documents/full_sail/ASL/ASL_Node_Project
+47 info installOne express-generator@4.12.0
+48 verbose installOne of express-generator to /Users/Cory/Documents/full_sail/ASL/ASL_Node_Project not in flight; installing
+49 verbose lock using /Users/Cory/.npm/_locks/express-generator-8f63f1389dff6494.lock for /Users/Cory/Documents/full_sail/ASL/ASL_Node_Project/node_modules/express-generator
+50 silly install write writing express-generator 4.12.0 to /Users/Cory/Documents/full_sail/ASL/ASL_Node_Project/node_modules/express-generator
+51 silly cache addNamed cb express-generator@4.12.0
+52 verbose unbuild node_modules/express-generator
+53 verbose gentlyRm vacuuming /Users/Cory/Documents/full_sail/ASL/ASL_Node_Project/node_modules/express-generator
+54 verbose tar unpack /Users/Cory/.npm/express-generator/4.12.0/package.tgz
+55 verbose tar unpacking to /Users/Cory/Documents/full_sail/ASL/ASL_Node_Project/node_modules/express-generator
+56 verbose gentlyRm vacuuming /Users/Cory/Documents/full_sail/ASL/ASL_Node_Project/node_modules/express-generator
+57 silly gunzTarPerm modes [ '755', '644' ]
+58 silly gunzTarPerm extractEntry package.json
+59 silly gunzTarPerm modified mode [ 'package.json', 438, 420 ]
+60 silly gunzTarPerm extractEntry README.md
+61 silly gunzTarPerm modified mode [ 'README.md', 438, 420 ]
+62 silly gunzTarPerm extractEntry LICENSE
+63 silly gunzTarPerm modified mode [ 'LICENSE', 438, 420 ]
+64 silly gunzTarPerm extractEntry bin/express
+65 silly gunzTarPerm modified mode [ 'bin/express', 438, 420 ]
+66 silly gunzTarPerm extractEntry templates/css/style.css
+67 silly gunzTarPerm modified mode [ 'templates/css/style.css', 438, 420 ]
+68 silly gunzTarPerm extractEntry templates/css/style.less
+69 silly gunzTarPerm modified mode [ 'templates/css/style.less', 438, 420 ]
+70 silly gunzTarPerm extractEntry templates/css/style.scss
+71 silly gunzTarPerm modified mode [ 'templates/css/style.scss', 438, 420 ]
+72 silly gunzTarPerm extractEntry templates/css/style.styl
+73 silly gunzTarPerm modified mode [ 'templates/css/style.styl', 438, 420 ]
+74 silly gunzTarPerm extractEntry templates/ejs/error.ejs
+75 silly gunzTarPerm modified mode [ 'templates/ejs/error.ejs', 438, 420 ]
+76 silly gunzTarPerm extractEntry templates/ejs/index.ejs
+77 silly gunzTarPerm modified mode [ 'templates/ejs/index.ejs', 438, 420 ]
+78 silly gunzTarPerm extractEntry templates/hbs/error.hbs
+79 silly gunzTarPerm modified mode [ 'templates/hbs/error.hbs', 438, 420 ]
+80 silly gunzTarPerm extractEntry templates/hbs/index.hbs
+81 silly gunzTarPerm modified mode [ 'templates/hbs/index.hbs', 438, 420 ]
+82 silly gunzTarPerm extractEntry templates/hbs/layout.hbs
+83 silly gunzTarPerm modified mode [ 'templates/hbs/layout.hbs', 438, 420 ]
+84 silly gunzTarPerm extractEntry templates/hogan/error.hjs
+85 silly gunzTarPerm modified mode [ 'templates/hogan/error.hjs', 438, 420 ]
+86 silly gunzTarPerm extractEntry templates/hogan/index.hjs
+87 silly gunzTarPerm modified mode [ 'templates/hogan/index.hjs', 438, 420 ]
+88 silly gunzTarPerm extractEntry templates/jade/error.jade
+89 silly gunzTarPerm modified mode [ 'templates/jade/error.jade', 438, 420 ]
+90 silly gunzTarPerm extractEntry templates/jade/index.jade
+91 silly gunzTarPerm modified mode [ 'templates/jade/index.jade', 438, 420 ]
+92 silly gunzTarPerm extractEntry templates/jade/layout.jade
+93 silly gunzTarPerm modified mode [ 'templates/jade/layout.jade', 438, 420 ]
+94 silly gunzTarPerm extractEntry templates/js/app.js
+95 silly gunzTarPerm modified mode [ 'templates/js/app.js', 438, 420 ]
+96 silly gunzTarPerm extractEntry templates/js/gitignore
+97 silly gunzTarPerm modified mode [ 'templates/js/gitignore', 438, 420 ]
+98 silly gunzTarPerm extractEntry templates/js/routes/index.js
+99 silly gunzTarPerm modified mode [ 'templates/js/routes/index.js', 438, 420 ]
+100 silly gunzTarPerm extractEntry templates/js/routes/users.js
+101 silly gunzTarPerm modified mode [ 'templates/js/routes/users.js', 438, 420 ]
+102 silly gunzTarPerm extractEntry templates/js/www
+103 silly gunzTarPerm modified mode [ 'templates/js/www', 438, 420 ]
+104 info preinstall express-generator@4.12.0
+105 silly prepareForInstallMany adding commander@2.6.0 from express-generator dependencies
+106 silly prepareForInstallMany adding mkdirp@0.5.0 from express-generator dependencies
+107 silly prepareForInstallMany adding sorted-object@1.0.0 from express-generator dependencies
+108 silly cache add args [ 'commander@2.6.0', null ]
+109 verbose cache add spec commander@2.6.0
+110 silly cache add args [ 'mkdirp@0.5.0', null ]
+111 verbose cache add spec mkdirp@0.5.0
+112 silly cache add parsed spec { raw: 'commander@2.6.0',
+112 silly cache add   scope: null,
+112 silly cache add   name: 'commander',
+112 silly cache add   rawSpec: '2.6.0',
+112 silly cache add   spec: '2.6.0',
+112 silly cache add   type: 'version' }
+113 verbose addNamed commander@2.6.0
+114 silly addNamed semver.valid 2.6.0
+115 silly addNamed semver.validRange 2.6.0
+116 silly mapToRegistry name commander
+117 silly mapToRegistry using default registry
+118 silly mapToRegistry registry https://registry.npmjs.org/
+119 silly mapToRegistry uri https://registry.npmjs.org/commander
+120 verbose addNameVersion registry:https://registry.npmjs.org/commander not in flight; fetching
+121 silly cache add parsed spec { raw: 'mkdirp@0.5.0',
+121 silly cache add   scope: null,
+121 silly cache add   name: 'mkdirp',
+121 silly cache add   rawSpec: '0.5.0',
+121 silly cache add   spec: '0.5.0',
+121 silly cache add   type: 'version' }
+122 verbose addNamed mkdirp@0.5.0
+123 silly addNamed semver.valid 0.5.0
+124 silly addNamed semver.validRange 0.5.0
+125 silly mapToRegistry name mkdirp
+126 silly mapToRegistry using default registry
+127 silly mapToRegistry registry https://registry.npmjs.org/
+128 silly mapToRegistry uri https://registry.npmjs.org/mkdirp
+129 verbose addNameVersion registry:https://registry.npmjs.org/mkdirp not in flight; fetching
+130 silly cache add args [ 'sorted-object@1.0.0', null ]
+131 verbose cache add spec sorted-object@1.0.0
+132 silly cache add parsed spec { raw: 'sorted-object@1.0.0',
+132 silly cache add   scope: null,
+132 silly cache add   name: 'sorted-object',
+132 silly cache add   rawSpec: '1.0.0',
+132 silly cache add   spec: '1.0.0',
+132 silly cache add   type: 'version' }
+133 verbose addNamed sorted-object@1.0.0
+134 silly addNamed semver.valid 1.0.0
+135 silly addNamed semver.validRange 1.0.0
+136 silly mapToRegistry name sorted-object
+137 silly mapToRegistry using default registry
+138 silly mapToRegistry registry https://registry.npmjs.org/
+139 silly mapToRegistry uri https://registry.npmjs.org/sorted-object
+140 verbose addNameVersion registry:https://registry.npmjs.org/sorted-object not in flight; fetching
+141 verbose request uri https://registry.npmjs.org/sorted-object
+142 verbose request no auth needed
+143 info attempt registry request try #1 at 10:16:18 AM
+144 http request GET https://registry.npmjs.org/sorted-object
+145 verbose request uri https://registry.npmjs.org/mkdirp
+146 verbose request no auth needed
+147 info attempt registry request try #1 at 10:16:18 AM
+148 verbose etag "E5SCS2HO45F5J9ADCOH8XBR6L"
+149 http request GET https://registry.npmjs.org/mkdirp
+150 verbose request uri https://registry.npmjs.org/commander
+151 verbose request no auth needed
+152 info attempt registry request try #1 at 10:16:18 AM
+153 verbose etag "D0TDI81CVMHOJS2E2GJE1P6C5"
+154 http request GET https://registry.npmjs.org/commander
+155 http 304 https://registry.npmjs.org/mkdirp
+156 silly get cb [ 304,
+156 silly get   { date: 'Thu, 05 Mar 2015 15:16:17 GMT',
+156 silly get     server: 'Apache',
+156 silly get     via: '1.1 varnish',
+156 silly get     'last-modified': 'Thu, 05 Mar 2015 15:16:17 GMT',
+156 silly get     'cache-control': 'max-age=60',
+156 silly get     etag: '"E5SCS2HO45F5J9ADCOH8XBR6L"',
+156 silly get     age: '28',
+156 silly get     'x-served-by': 'cache-iad2131-IAD',
+156 silly get     'x-cache': 'HIT',
+156 silly get     'x-cache-hits': '1',
+156 silly get     'x-timer': 'S1425568577.424064,VS0,VE0',
+156 silly get     vary: 'Accept',
+156 silly get     'content-length': '0',
+156 silly get     'keep-alive': 'timeout=10, max=50',
+156 silly get     connection: 'Keep-Alive' } ]
+157 verbose etag https://registry.npmjs.org/mkdirp from cache
+158 verbose get saving mkdirp to /Users/Cory/.npm/registry.npmjs.org/mkdirp/.cache.json
+159 http 304 https://registry.npmjs.org/commander
+160 silly get cb [ 304,
+160 silly get   { date: 'Thu, 05 Mar 2015 15:16:17 GMT',
+160 silly get     server: 'Apache',
+160 silly get     via: '1.1 varnish',
+160 silly get     'last-modified': 'Thu, 05 Mar 2015 15:15:51 GMT',
+160 silly get     'cache-control': 'max-age=60',
+160 silly get     etag: '"D0TDI81CVMHOJS2E2GJE1P6C5"',
+160 silly get     age: '29',
+160 silly get     'x-served-by': 'cache-iad2139-IAD',
+160 silly get     'x-cache': 'HIT',
+160 silly get     'x-cache-hits': '3',
+160 silly get     'x-timer': 'S1425568577.425907,VS0,VE0',
+160 silly get     vary: 'Accept',
+160 silly get     'content-length': '0',
+160 silly get     'keep-alive': 'timeout=10, max=50',
+160 silly get     connection: 'Keep-Alive' } ]
+161 verbose etag https://registry.npmjs.org/commander from cache
+162 verbose get saving commander to /Users/Cory/.npm/registry.npmjs.org/commander/.cache.json
+163 silly cache afterAdd mkdirp@0.5.0
+164 verbose afterAdd /Users/Cory/.npm/mkdirp/0.5.0/package/package.json not in flight; writing
+165 silly cache afterAdd commander@2.6.0
+166 verbose afterAdd /Users/Cory/.npm/commander/2.6.0/package/package.json not in flight; writing
+167 verbose afterAdd /Users/Cory/.npm/commander/2.6.0/package/package.json written
+168 verbose afterAdd /Users/Cory/.npm/mkdirp/0.5.0/package/package.json written
+169 http 200 https://registry.npmjs.org/sorted-object
+170 silly get cb [ 200,
+170 silly get   { date: 'Thu, 05 Mar 2015 15:16:17 GMT',
+170 silly get     server: 'CouchDB/1.5.0 (Erlang OTP/R16B03)',
+170 silly get     etag: '"96C06KL7Y0I359QEPIMOCTJG0"',
+170 silly get     'content-type': 'application/json',
+170 silly get     'cache-control': 'max-age=60',
+170 silly get     'content-length': '2564',
+170 silly get     'accept-ranges': 'bytes',
+170 silly get     via: '1.1 varnish',
+170 silly get     age: '0',
+170 silly get     'x-served-by': 'cache-iad2138-IAD',
+170 silly get     'x-cache': 'HIT',
+170 silly get     'x-cache-hits': '1',
+170 silly get     'x-timer': 'S1425568577.421659,VS0,VE356',
+170 silly get     vary: 'Accept',
+170 silly get     'keep-alive': 'timeout=10, max=50',
+170 silly get     connection: 'Keep-Alive' } ]
+171 verbose get saving sorted-object to /Users/Cory/.npm/registry.npmjs.org/sorted-object/.cache.json
+172 silly mapToRegistry name sorted-object
+173 silly mapToRegistry using default registry
+174 silly mapToRegistry registry https://registry.npmjs.org/
+175 silly mapToRegistry uri https://registry.npmjs.org/sorted-object
+176 verbose addRemoteTarball https://registry.npmjs.org/sorted-object/-/sorted-object-1.0.0.tgz not in flight; adding
+177 verbose addRemoteTarball [ 'https://registry.npmjs.org/sorted-object/-/sorted-object-1.0.0.tgz',
+177 verbose addRemoteTarball   '5d1f4f9c1fb2cd48965967304e212eb44cfb6d05' ]
+178 info retry fetch attempt 1 at 10:16:18 AM
+179 info attempt registry request try #1 at 10:16:18 AM
+180 http fetch GET https://registry.npmjs.org/sorted-object/-/sorted-object-1.0.0.tgz
+181 http fetch 200 https://registry.npmjs.org/sorted-object/-/sorted-object-1.0.0.tgz
+182 silly fetchAndShaCheck shasum 5d1f4f9c1fb2cd48965967304e212eb44cfb6d05
+183 verbose addTmpTarball /var/folders/zj/f_l4bkxs3jj5bgkc59xc7ypm0000gn/T/npm-3163-8e46bbef/registry.npmjs.org/sorted-object/-/sorted-object-1.0.0.tgz not in flight; adding
+184 verbose addTmpTarball already have metadata; skipping unpack for sorted-object@1.0.0
+185 silly cache afterAdd sorted-object@1.0.0
+186 verbose afterAdd /Users/Cory/.npm/sorted-object/1.0.0/package/package.json not in flight; writing
+187 verbose afterAdd /Users/Cory/.npm/sorted-object/1.0.0/package/package.json written
+188 silly install resolved [ { name: 'commander',
+188 silly install resolved     version: '2.6.0',
+188 silly install resolved     description: 'the complete solution for node.js command-line programs',
+188 silly install resolved     keywords: [ 'command', 'option', 'parser', 'prompt' ],
+188 silly install resolved     author: { name: 'TJ Holowaychuk', email: 'tj@vision-media.ca' },
+188 silly install resolved     license: 'MIT',
+188 silly install resolved     repository: { type: 'git', url: 'https://github.com/tj/commander.js.git' },
+188 silly install resolved     devDependencies: { should: '>= 0.0.1' },
+188 silly install resolved     scripts: { test: 'make test' },
+188 silly install resolved     main: 'index',
+188 silly install resolved     engines: { node: '>= 0.6.x' },
+188 silly install resolved     files: [ 'index.js' ],
+188 silly install resolved     gitHead: 'c6807fd154dd3b7ce8756f141f8d3acfcc74be60',
+188 silly install resolved     bugs: { url: 'https://github.com/tj/commander.js/issues' },
+188 silly install resolved     homepage: 'https://github.com/tj/commander.js',
+188 silly install resolved     _id: 'commander@2.6.0',
+188 silly install resolved     _shasum: '9df7e52fb2a0cb0fb89058ee80c3104225f37e1d',
+188 silly install resolved     _from: 'commander@2.6.0',
+188 silly install resolved     _npmVersion: '2.1.12',
+188 silly install resolved     _nodeVersion: '0.11.14',
+188 silly install resolved     _npmUser: { name: 'zhiyelee', email: 'zhiyelee@gmail.com' },
+188 silly install resolved     maintainers: [ [Object], [Object], [Object], [Object] ],
+188 silly install resolved     dist:
+188 silly install resolved      { shasum: '9df7e52fb2a0cb0fb89058ee80c3104225f37e1d',
+188 silly install resolved        tarball: 'http://registry.npmjs.org/commander/-/commander-2.6.0.tgz' },
+188 silly install resolved     directories: {},
+188 silly install resolved     _resolved: 'https://registry.npmjs.org/commander/-/commander-2.6.0.tgz',
+188 silly install resolved     readme: 'ERROR: No README data found!' },
+188 silly install resolved   { name: 'mkdirp',
+188 silly install resolved     description: 'Recursively mkdir, like `mkdir -p`',
+188 silly install resolved     version: '0.5.0',
+188 silly install resolved     author:
+188 silly install resolved      { name: 'James Halliday',
+188 silly install resolved        email: 'mail@substack.net',
+188 silly install resolved        url: 'http://substack.net' },
+188 silly install resolved     main: './index',
+188 silly install resolved     keywords: [ 'mkdir', 'directory' ],
+188 silly install resolved     repository:
+188 silly install resolved      { type: 'git',
+188 silly install resolved        url: 'https://github.com/substack/node-mkdirp.git' },
+188 silly install resolved     scripts: { test: 'tap test/*.js' },
+188 silly install resolved     dependencies: { minimist: '0.0.8' },
+188 silly install resolved     devDependencies: { tap: '~0.4.0', 'mock-fs': '~2.2.0' },
+188 silly install resolved     bin: { mkdirp: 'bin/cmd.js' },
+188 silly install resolved     license: 'MIT',
+188 silly install resolved     bugs: { url: 'https://github.com/substack/node-mkdirp/issues' },
+188 silly install resolved     homepage: 'https://github.com/substack/node-mkdirp',
+188 silly install resolved     _id: 'mkdirp@0.5.0',
+188 silly install resolved     dist:
+188 silly install resolved      { shasum: '1d73076a6df986cd9344e15e71fcc05a4c9abf12',
+188 silly install resolved        tarball: 'http://registry.npmjs.org/mkdirp/-/mkdirp-0.5.0.tgz' },
+188 silly install resolved     _from: 'mkdirp@0.5.0',
+188 silly install resolved     _npmVersion: '1.4.3',
+188 silly install resolved     _npmUser: { name: 'substack', email: 'mail@substack.net' },
+188 silly install resolved     maintainers: [ [Object] ],
+188 silly install resolved     directories: {},
+188 silly install resolved     _shasum: '1d73076a6df986cd9344e15e71fcc05a4c9abf12',
+188 silly install resolved     _resolved: 'https://registry.npmjs.org/mkdirp/-/mkdirp-0.5.0.tgz',
+188 silly install resolved     readme: 'ERROR: No README data found!' },
+188 silly install resolved   { name: 'sorted-object',
+188 silly install resolved     description: 'Returns a copy of an object with its keys sorted',
+188 silly install resolved     keywords: [ 'sort', 'keys', 'object' ],
+188 silly install resolved     version: '1.0.0',
+188 silly install resolved     author:
+188 silly install resolved      { name: 'Domenic Denicola',
+188 silly install resolved        email: 'domenic@domenicdenicola.com',
+188 silly install resolved        url: 'http://domenic.me/' },
+188 silly install resolved     license: 'WTFPL',
+188 silly install resolved     repository:
+188 silly install resolved      { type: 'git',
+188 silly install resolved        url: 'git://github.com/domenic/sorted-object.git' },
+188 silly install resolved     bugs: { url: 'http://github.com/domenic/sorted-object/issues' },
+188 silly install resolved     main: 'lib/sorted-object.js',
+188 silly install resolved     scripts:
+188 silly install resolved      { test: 'tape test/tests.js',
+188 silly install resolved        lint: 'jshint lib && jshint test' },
+188 silly install resolved     devDependencies: { jshint: '~2.4.3', tape: '~2.4.2' },
+188 silly install resolved     homepage: 'https://github.com/domenic/sorted-object',
+188 silly install resolved     _id: 'sorted-object@1.0.0',
+188 silly install resolved     dist:
+188 silly install resolved      { shasum: '5d1f4f9c1fb2cd48965967304e212eb44cfb6d05',
+188 silly install resolved        tarball: 'http://registry.npmjs.org/sorted-object/-/sorted-object-1.0.0.tgz' },
+188 silly install resolved     _from: 'sorted-object@1.0.0',
+188 silly install resolved     _npmVersion: '1.3.25',
+188 silly install resolved     _npmUser: { name: 'domenic', email: 'domenic@domenicdenicola.com' },
+188 silly install resolved     maintainers: [ [Object] ],
+188 silly install resolved     directories: {},
+188 silly install resolved     _shasum: '5d1f4f9c1fb2cd48965967304e212eb44cfb6d05',
+188 silly install resolved     _resolved: 'https://registry.npmjs.org/sorted-object/-/sorted-object-1.0.0.tgz' } ]
+189 info install commander@2.6.0 into /Users/Cory/Documents/full_sail/ASL/ASL_Node_Project/node_modules/express-generator
+190 info install mkdirp@0.5.0 into /Users/Cory/Documents/full_sail/ASL/ASL_Node_Project/node_modules/express-generator
+191 info install sorted-object@1.0.0 into /Users/Cory/Documents/full_sail/ASL/ASL_Node_Project/node_modules/express-generator
+192 info installOne commander@2.6.0
+193 verbose installOne of commander to /Users/Cory/Documents/full_sail/ASL/ASL_Node_Project/node_modules/express-generator not in flight; installing
+194 info installOne mkdirp@0.5.0
+195 verbose installOne of mkdirp to /Users/Cory/Documents/full_sail/ASL/ASL_Node_Project/node_modules/express-generator not in flight; installing
+196 info installOne sorted-object@1.0.0
+197 verbose installOne of sorted-object to /Users/Cory/Documents/full_sail/ASL/ASL_Node_Project/node_modules/express-generator not in flight; installing
+198 verbose lock using /Users/Cory/.npm/_locks/commander-75c0d3a8f43201ee.lock for /Users/Cory/Documents/full_sail/ASL/ASL_Node_Project/node_modules/express-generator/node_modules/commander
+199 verbose lock using /Users/Cory/.npm/_locks/mkdirp-9abf84a71676bbc2.lock for /Users/Cory/Documents/full_sail/ASL/ASL_Node_Project/node_modules/express-generator/node_modules/mkdirp
+200 silly install write writing commander 2.6.0 to /Users/Cory/Documents/full_sail/ASL/ASL_Node_Project/node_modules/express-generator/node_modules/commander
+201 silly cache addNamed cb commander@2.6.0
+202 verbose unbuild node_modules/express-generator/node_modules/commander
+203 silly install write writing mkdirp 0.5.0 to /Users/Cory/Documents/full_sail/ASL/ASL_Node_Project/node_modules/express-generator/node_modules/mkdirp
+204 silly cache addNamed cb mkdirp@0.5.0
+205 verbose unbuild node_modules/express-generator/node_modules/mkdirp
+206 verbose lock using /Users/Cory/.npm/_locks/sorted-object-62dbc113edc74aeb.lock for /Users/Cory/Documents/full_sail/ASL/ASL_Node_Project/node_modules/express-generator/node_modules/sorted-object
+207 silly install write writing sorted-object 1.0.0 to /Users/Cory/Documents/full_sail/ASL/ASL_Node_Project/node_modules/express-generator/node_modules/sorted-object
+208 verbose gentlyRm vacuuming /Users/Cory/Documents/full_sail/ASL/ASL_Node_Project/node_modules/express-generator/node_modules/commander
+209 verbose gentlyRm vacuuming /Users/Cory/Documents/full_sail/ASL/ASL_Node_Project/node_modules/express-generator/node_modules/mkdirp
+210 verbose tar unpack /Users/Cory/.npm/commander/2.6.0/package.tgz
+211 verbose tar unpacking to /Users/Cory/Documents/full_sail/ASL/ASL_Node_Project/node_modules/express-generator/node_modules/commander
+212 verbose gentlyRm vacuuming /Users/Cory/Documents/full_sail/ASL/ASL_Node_Project/node_modules/express-generator/node_modules/commander
+213 verbose tar unpack /Users/Cory/.npm/mkdirp/0.5.0/package.tgz
+214 verbose tar unpacking to /Users/Cory/Documents/full_sail/ASL/ASL_Node_Project/node_modules/express-generator/node_modules/mkdirp
+215 verbose gentlyRm vacuuming /Users/Cory/Documents/full_sail/ASL/ASL_Node_Project/node_modules/express-generator/node_modules/mkdirp
+216 silly gunzTarPerm modes [ '755', '644' ]
+217 silly gunzTarPerm modes [ '755', '644' ]
+218 silly cache addNamed cb sorted-object@1.0.0
+219 verbose unbuild node_modules/express-generator/node_modules/sorted-object
+220 verbose gentlyRm vacuuming /Users/Cory/Documents/full_sail/ASL/ASL_Node_Project/node_modules/express-generator/node_modules/sorted-object
+221 silly gunzTarPerm extractEntry package.json
+222 silly gunzTarPerm modified mode [ 'package.json', 436, 420 ]
+223 verbose tar unpack /Users/Cory/.npm/sorted-object/1.0.0/package.tgz
+224 verbose tar unpacking to /Users/Cory/Documents/full_sail/ASL/ASL_Node_Project/node_modules/express-generator/node_modules/sorted-object
+225 verbose gentlyRm vacuuming /Users/Cory/Documents/full_sail/ASL/ASL_Node_Project/node_modules/express-generator/node_modules/sorted-object
+226 silly gunzTarPerm extractEntry package.json
+227 silly gunzTarPerm modes [ '755', '644' ]
+228 silly gunzTarPerm extractEntry index.js
+229 silly gunzTarPerm modified mode [ 'index.js', 436, 420 ]
+230 silly gunzTarPerm extractEntry Readme.md
+231 silly gunzTarPerm modified mode [ 'Readme.md', 436, 420 ]
+232 silly gunzTarPerm extractEntry History.md
+233 silly gunzTarPerm modified mode [ 'History.md', 436, 420 ]
+234 silly gunzTarPerm extractEntry .npmignore
+235 silly gunzTarPerm extractEntry LICENSE
+236 silly gunzTarPerm extractEntry package.json
+237 silly gunzTarPerm modified mode [ 'package.json', 438, 420 ]
+238 silly gunzTarPerm extractEntry README.md
+239 silly gunzTarPerm modified mode [ 'README.md', 438, 420 ]
+240 silly gunzTarPerm extractEntry lib/sorted-object.js
+241 silly gunzTarPerm modified mode [ 'lib/sorted-object.js', 438, 420 ]
+242 silly gunzTarPerm extractEntry index.js
+243 silly gunzTarPerm extractEntry .travis.yml
+244 silly gunzTarPerm extractEntry LICENSE.txt
+245 silly gunzTarPerm modified mode [ 'LICENSE.txt', 438, 420 ]
+246 silly gunzTarPerm extractEntry bin/cmd.js
+247 silly gunzTarPerm extractEntry bin/usage.txt
+248 silly gunzTarPerm extractEntry examples/pow.js
+249 silly gunzTarPerm extractEntry readme.markdown
+250 silly gunzTarPerm extractEntry test/chmod.js
+251 silly gunzTarPerm extractEntry test/opts_fs_sync.js
+252 silly gunzTarPerm extractEntry test/perm.js
+253 silly gunzTarPerm extractEntry test/perm_sync.js
+254 silly gunzTarPerm extractEntry test/opts_fs.js
+255 silly gunzTarPerm extractEntry test/rel.js
+256 silly gunzTarPerm extractEntry test/return.js
+257 silly gunzTarPerm extractEntry test/return_sync.js
+258 silly gunzTarPerm extractEntry test/root.js
+259 silly gunzTarPerm extractEntry test/sync.js
+260 silly gunzTarPerm extractEntry test/mkdirp.js
+261 silly gunzTarPerm extractEntry test/umask.js
+262 silly gunzTarPerm extractEntry test/clobber.js
+263 silly gunzTarPerm extractEntry test/umask_sync.js
+264 silly gunzTarPerm extractEntry test/race.js
+265 info preinstall sorted-object@1.0.0
+266 silly install resolved []
+267 verbose about to build /Users/Cory/Documents/full_sail/ASL/ASL_Node_Project/node_modules/express-generator/node_modules/sorted-object
+268 info build /Users/Cory/Documents/full_sail/ASL/ASL_Node_Project/node_modules/express-generator/node_modules/sorted-object
+269 verbose linkStuff [ false,
+269 verbose linkStuff   false,
+269 verbose linkStuff   false,
+269 verbose linkStuff   '/Users/Cory/Documents/full_sail/ASL/ASL_Node_Project/node_modules/express-generator/node_modules' ]
+270 info linkStuff sorted-object@1.0.0
+271 verbose linkBins sorted-object@1.0.0
+272 verbose linkMans sorted-object@1.0.0
+273 verbose rebuildBundles sorted-object@1.0.0
+274 info install sorted-object@1.0.0
+275 info postinstall sorted-object@1.0.0
+276 verbose unlock done using /Users/Cory/.npm/_locks/sorted-object-62dbc113edc74aeb.lock for /Users/Cory/Documents/full_sail/ASL/ASL_Node_Project/node_modules/express-generator/node_modules/sorted-object
+277 info preinstall commander@2.6.0
+278 silly install resolved []
+279 verbose about to build /Users/Cory/Documents/full_sail/ASL/ASL_Node_Project/node_modules/express-generator/node_modules/commander
+280 info build /Users/Cory/Documents/full_sail/ASL/ASL_Node_Project/node_modules/express-generator/node_modules/commander
+281 verbose linkStuff [ false,
+281 verbose linkStuff   false,
+281 verbose linkStuff   false,
+281 verbose linkStuff   '/Users/Cory/Documents/full_sail/ASL/ASL_Node_Project/node_modules/express-generator/node_modules' ]
+282 info linkStuff commander@2.6.0
+283 verbose linkBins commander@2.6.0
+284 verbose linkMans commander@2.6.0
+285 verbose rebuildBundles commander@2.6.0
+286 info install commander@2.6.0
+287 info postinstall commander@2.6.0
+288 verbose unlock done using /Users/Cory/.npm/_locks/commander-75c0d3a8f43201ee.lock for /Users/Cory/Documents/full_sail/ASL/ASL_Node_Project/node_modules/express-generator/node_modules/commander
+289 info preinstall mkdirp@0.5.0
+290 silly prepareForInstallMany adding minimist@0.0.8 from mkdirp dependencies
+291 silly cache add args [ 'minimist@0.0.8', null ]
+292 verbose cache add spec minimist@0.0.8
+293 silly cache add parsed spec { raw: 'minimist@0.0.8',
+293 silly cache add   scope: null,
+293 silly cache add   name: 'minimist',
+293 silly cache add   rawSpec: '0.0.8',
+293 silly cache add   spec: '0.0.8',
+293 silly cache add   type: 'version' }
+294 verbose addNamed minimist@0.0.8
+295 silly addNamed semver.valid 0.0.8
+296 silly addNamed semver.validRange 0.0.8
+297 silly mapToRegistry name minimist
+298 silly mapToRegistry using default registry
+299 silly mapToRegistry registry https://registry.npmjs.org/
+300 silly mapToRegistry uri https://registry.npmjs.org/minimist
+301 verbose addNameVersion registry:https://registry.npmjs.org/minimist not in flight; fetching
+302 verbose request uri https://registry.npmjs.org/minimist
+303 verbose request no auth needed
+304 info attempt registry request try #1 at 10:16:18 AM
+305 verbose etag "71PO5FVTPMVXNQ1OWJPPGQYJG"
+306 http request GET https://registry.npmjs.org/minimist
+307 http 304 https://registry.npmjs.org/minimist
+308 silly get cb [ 304,
+308 silly get   { date: 'Thu, 05 Mar 2015 15:16:18 GMT',
+308 silly get     server: 'Apache',
+308 silly get     via: '1.1 varnish',
+308 silly get     'last-modified': 'Thu, 05 Mar 2015 15:16:09 GMT',
+308 silly get     'cache-control': 'max-age=60',
+308 silly get     etag: '"71PO5FVTPMVXNQ1OWJPPGQYJG"',
+308 silly get     age: '33',
+308 silly get     'x-served-by': 'cache-iad2148-IAD',
+308 silly get     'x-cache': 'HIT',
+308 silly get     'x-cache-hits': '2',
+308 silly get     'x-timer': 'S1425568578.222216,VS0,VE0',
+308 silly get     vary: 'Accept',
+308 silly get     'content-length': '0',
+308 silly get     'keep-alive': 'timeout=10, max=50',
+308 silly get     connection: 'Keep-Alive' } ]
+309 verbose etag https://registry.npmjs.org/minimist from cache
+310 verbose get saving minimist to /Users/Cory/.npm/registry.npmjs.org/minimist/.cache.json
+311 silly cache afterAdd minimist@0.0.8
+312 verbose afterAdd /Users/Cory/.npm/minimist/0.0.8/package/package.json not in flight; writing
+313 verbose afterAdd /Users/Cory/.npm/minimist/0.0.8/package/package.json written
+314 silly install resolved [ { name: 'minimist',
+314 silly install resolved     version: '0.0.8',
+314 silly install resolved     description: 'parse argument options',
+314 silly install resolved     main: 'index.js',
+314 silly install resolved     devDependencies: { tape: '~1.0.4', tap: '~0.4.0' },
+314 silly install resolved     scripts: { test: 'tap test/*.js' },
+314 silly install resolved     testling: { files: 'test/*.js', browsers: [Object] },
+314 silly install resolved     repository: { type: 'git', url: 'git://github.com/substack/minimist.git' },
+314 silly install resolved     homepage: 'https://github.com/substack/minimist',
+314 silly install resolved     keywords: [ 'argv', 'getopt', 'parser', 'optimist' ],
+314 silly install resolved     author:
+314 silly install resolved      { name: 'James Halliday',
+314 silly install resolved        email: 'mail@substack.net',
+314 silly install resolved        url: 'http://substack.net' },
+314 silly install resolved     license: 'MIT',
+314 silly install resolved     bugs: { url: 'https://github.com/substack/minimist/issues' },
+314 silly install resolved     _id: 'minimist@0.0.8',
+314 silly install resolved     dist:
+314 silly install resolved      { shasum: '857fcabfc3397d2625b8228262e86aa7a011b05d',
+314 silly install resolved        tarball: 'http://registry.npmjs.org/minimist/-/minimist-0.0.8.tgz' },
+314 silly install resolved     _from: 'minimist@0.0.8',
+314 silly install resolved     _npmVersion: '1.4.3',
+314 silly install resolved     _npmUser: { name: 'substack', email: 'mail@substack.net' },
+314 silly install resolved     maintainers: [ [Object] ],
+314 silly install resolved     directories: {},
+314 silly install resolved     _shasum: '857fcabfc3397d2625b8228262e86aa7a011b05d',
+314 silly install resolved     _resolved: 'https://registry.npmjs.org/minimist/-/minimist-0.0.8.tgz',
+314 silly install resolved     readme: 'ERROR: No README data found!' } ]
+315 info install minimist@0.0.8 into /Users/Cory/Documents/full_sail/ASL/ASL_Node_Project/node_modules/express-generator/node_modules/mkdirp
+316 info installOne minimist@0.0.8
+317 verbose installOne of minimist to /Users/Cory/Documents/full_sail/ASL/ASL_Node_Project/node_modules/express-generator/node_modules/mkdirp not in flight; installing
+318 verbose lock using /Users/Cory/.npm/_locks/minimist-9374e6ab841bb7bf.lock for /Users/Cory/Documents/full_sail/ASL/ASL_Node_Project/node_modules/express-generator/node_modules/mkdirp/node_modules/minimist
+319 silly install write writing minimist 0.0.8 to /Users/Cory/Documents/full_sail/ASL/ASL_Node_Project/node_modules/express-generator/node_modules/mkdirp/node_modules/minimist
+320 silly cache addNamed cb minimist@0.0.8
+321 verbose unbuild node_modules/express-generator/node_modules/mkdirp/node_modules/minimist
+322 verbose gentlyRm vacuuming /Users/Cory/Documents/full_sail/ASL/ASL_Node_Project/node_modules/express-generator/node_modules/mkdirp/node_modules/minimist
+323 verbose tar unpack /Users/Cory/.npm/minimist/0.0.8/package.tgz
+324 verbose tar unpacking to /Users/Cory/Documents/full_sail/ASL/ASL_Node_Project/node_modules/express-generator/node_modules/mkdirp/node_modules/minimist
+325 verbose gentlyRm vacuuming /Users/Cory/Documents/full_sail/ASL/ASL_Node_Project/node_modules/express-generator/node_modules/mkdirp/node_modules/minimist
+326 silly gunzTarPerm modes [ '755', '644' ]
+327 silly gunzTarPerm extractEntry package.json
+328 silly gunzTarPerm extractEntry LICENSE
+329 silly gunzTarPerm extractEntry index.js
+330 silly gunzTarPerm extractEntry .travis.yml
+331 silly gunzTarPerm extractEntry example/parse.js
+332 silly gunzTarPerm extractEntry readme.markdown
+333 silly gunzTarPerm extractEntry test/dash.js
+334 silly gunzTarPerm extractEntry test/default_bool.js
+335 silly gunzTarPerm extractEntry test/dotted.js
+336 silly gunzTarPerm extractEntry test/long.js
+337 silly gunzTarPerm extractEntry test/parse.js
+338 silly gunzTarPerm extractEntry test/parse_modified.js
+339 silly gunzTarPerm extractEntry test/short.js
+340 silly gunzTarPerm extractEntry test/whitespace.js
+341 info preinstall minimist@0.0.8
+342 silly install resolved []
+343 verbose about to build /Users/Cory/Documents/full_sail/ASL/ASL_Node_Project/node_modules/express-generator/node_modules/mkdirp/node_modules/minimist
+344 info build /Users/Cory/Documents/full_sail/ASL/ASL_Node_Project/node_modules/express-generator/node_modules/mkdirp/node_modules/minimist
+345 verbose linkStuff [ false,
+345 verbose linkStuff   false,
+345 verbose linkStuff   false,
+345 verbose linkStuff   '/Users/Cory/Documents/full_sail/ASL/ASL_Node_Project/node_modules/express-generator/node_modules/mkdirp/node_modules' ]
+346 info linkStuff minimist@0.0.8
+347 verbose linkBins minimist@0.0.8
+348 verbose linkMans minimist@0.0.8
+349 verbose rebuildBundles minimist@0.0.8
+350 info install minimist@0.0.8
+351 info postinstall minimist@0.0.8
+352 verbose unlock done using /Users/Cory/.npm/_locks/minimist-9374e6ab841bb7bf.lock for /Users/Cory/Documents/full_sail/ASL/ASL_Node_Project/node_modules/express-generator/node_modules/mkdirp/node_modules/minimist
+353 verbose about to build /Users/Cory/Documents/full_sail/ASL/ASL_Node_Project/node_modules/express-generator/node_modules/mkdirp
+354 info build /Users/Cory/Documents/full_sail/ASL/ASL_Node_Project/node_modules/express-generator/node_modules/mkdirp
+355 verbose linkStuff [ false,
+355 verbose linkStuff   false,
+355 verbose linkStuff   false,
+355 verbose linkStuff   '/Users/Cory/Documents/full_sail/ASL/ASL_Node_Project/node_modules/express-generator/node_modules' ]
+356 info linkStuff mkdirp@0.5.0
+357 verbose linkBins mkdirp@0.5.0
+358 verbose link bins [ { mkdirp: 'bin/cmd.js' },
+358 verbose link bins   '/Users/Cory/Documents/full_sail/ASL/ASL_Node_Project/node_modules/express-generator/node_modules/.bin',
+358 verbose link bins   false ]
+359 verbose linkMans mkdirp@0.5.0
+360 verbose rebuildBundles mkdirp@0.5.0
+361 verbose rebuildBundles [ 'minimist' ]
+362 verbose gentlyRm vacuuming /Users/Cory/Documents/full_sail/ASL/ASL_Node_Project/node_modules/express-generator/node_modules/.bin/mkdirp
+363 info install mkdirp@0.5.0
+364 info postinstall mkdirp@0.5.0
+365 verbose unlock done using /Users/Cory/.npm/_locks/mkdirp-9abf84a71676bbc2.lock for /Users/Cory/Documents/full_sail/ASL/ASL_Node_Project/node_modules/express-generator/node_modules/mkdirp
+366 verbose about to build /Users/Cory/Documents/full_sail/ASL/ASL_Node_Project/node_modules/express-generator
+367 info build /Users/Cory/Documents/full_sail/ASL/ASL_Node_Project/node_modules/express-generator
+368 verbose linkStuff [ false,
+368 verbose linkStuff   false,
+368 verbose linkStuff   false,
+368 verbose linkStuff   '/Users/Cory/Documents/full_sail/ASL/ASL_Node_Project/node_modules' ]
+369 info linkStuff express-generator@4.12.0
+370 warn prefer global express-generator@4.12.0 should be installed with -g
+371 verbose linkBins express-generator@4.12.0
+372 verbose link bins [ { express: './bin/express' },
+372 verbose link bins   '/Users/Cory/Documents/full_sail/ASL/ASL_Node_Project/node_modules/.bin',
+372 verbose link bins   false ]
+373 verbose linkMans express-generator@4.12.0
+374 verbose rebuildBundles express-generator@4.12.0
+375 verbose rebuildBundles [ '.bin', 'commander', 'mkdirp', 'sorted-object' ]
+376 verbose gentlyRm vacuuming /Users/Cory/Documents/full_sail/ASL/ASL_Node_Project/node_modules/.bin/express
+377 verbose unlock done using /Users/Cory/.npm/_locks/express-generator-8f63f1389dff6494.lock for /Users/Cory/Documents/full_sail/ASL/ASL_Node_Project/node_modules/express-generator
+378 verbose stack Error: EACCES, symlink '../express-generator/bin/express'
+378 verbose stack     at Error (native)
+379 verbose cwd /Users/Cory/Documents/full_sail/ASL/ASL_Node_Project
+380 error Darwin 14.1.0
+381 error argv "/usr/local/bin/node" "/usr/local/bin/npm" "install" "express-generator"
+382 error node v0.12.0
+383 error npm  v2.5.1
+384 error path ../express-generator/bin/express
+385 error code EACCES
+386 error errno -13
+387 error Error: EACCES, symlink '../express-generator/bin/express'
+387 error     at Error (native)
+387 error  { [Error: EACCES, symlink '../express-generator/bin/express']
+387 error   errno: -13,
+387 error   code: 'EACCES',
+387 error   path: '../express-generator/bin/express' }
+388 error Please try running this command again as root/Administrator.
+389 verbose exit [ -13, true ]
+390 verbose unbuild node_modules/express-generator
+391 info preuninstall express-generator@4.12.0
+392 info uninstall express-generator@4.12.0
+393 verbose unbuild rmStuff express-generator@4.12.0 from /Users/Cory/Documents/full_sail/ASL/ASL_Node_Project/node_modules
+394 verbose gentlyRm verifying that /Users/Cory/Documents/full_sail/ASL/ASL_Node_Project is managed by npm
+395 silly isManaged /Users/Cory/Documents/full_sail/ASL/ASL_Node_Project is not inside /Users/Cory/Documents/full_sail/ASL/ASL_Node_Project/node_modules
+396 silly isManaged /Users/Cory/Documents/full_sail/ASL/ASL_Node_Project is not inside /Users/Cory/Documents/full_sail/ASL/ASL_Node_Project/node_modules
+397 silly isManaged /Users/Cory/Documents/full_sail/ASL/ASL_Node_Project/node_modules/.bin is inside /Users/Cory/Documents/full_sail/ASL/ASL_Node_Project
+398 silly gentlyRm /Users/Cory/Documents/full_sail/ASL/ASL_Node_Project is managed by npm
+399 silly gentlyRm /Users/Cory/Documents/full_sail/ASL/ASL_Node_Project/node_modules/.bin/express is under /Users/Cory/Documents/full_sail/ASL/ASL_Node_Project
+400 verbose gentlyRm vacuuming /Users/Cory/Documents/full_sail/ASL/ASL_Node_Project/node_modules/.bin/express up to /Users/Cory/Documents/full_sail/ASL/ASL_Node_Project
+401 info postuninstall express-generator@4.12.0
+402 verbose gentlyRm vacuuming /Users/Cory/Documents/full_sail/ASL/ASL_Node_Project/node_modules/express-generator
+403 silly gentlyRm purging /Users/Cory/Documents/full_sail/ASL/ASL_Node_Project/node_modules/express-generator
+404 silly gentlyRm quitting because other entries in /Users/Cory/Documents/full_sail/ASL/ASL_Node_Project/node_modules
