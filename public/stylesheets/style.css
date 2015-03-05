@@ -1,8 +1,28 @@
 
 input {
-    width: 200px;
+    width: 100%;
 }
 
 h1{
     text-align: center;
+}
+
+#row1{
+    background: url('/images/main-img.jpg');
+    height:600px;
+}
+
+#search_box {
+
+
+
+    background:-webkit-gradient(linear, 0 0, 0 100%, from(#8d86c9), to(#b7d3f2));
+
+
+
+
+    padding:9px;
+
+
+
 }
