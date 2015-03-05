@@ -1,8 +1,8 @@
-body {
-  padding: 50px;
-  font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
+
+input {
+    width: 200px;
 }
 
-a {
-  color: #00B7FF;
+h1{
+    text-align: center;
 }
