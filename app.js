@@ -9,7 +9,6 @@ var routes = require('./routes/index');
 
 
 var app = express();
-app.use(bodyParser()); 
 // view engine setup
 app.set('views', path.join(__dirname, 'views'));
 app.set('view engine', 'ejs');
@@ -24,6 +23,14 @@ app.use(express.static(path.join(__dirname, 'public')));
 
 app.use('/', routes);
 
+app.use(bodyParser()); 
+app.post('/register', function(req, res){
+
+  console.log(req.body.username);
+  console.log(req.body.email);
+  console.log(req.body.password);
+
+});
 
 // catch 404 and forward to error handler
 app.use(function(req, res, next) {
@@ -88,11 +95,5 @@ connection.connect(function(err) {
   console.log('connected as id ' + connection.threadId);
 });
 
-app.post('/register', bodyParser, function(req, res){
-
-  if (!req.body) return res.sendStatus(400)
-  res.send('welcome, ' + req.body.username + req.body.email + req.body.password)
-
-});
 
 module.exports = app;
