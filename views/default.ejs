@@ -1,35 +1,40 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title><%= title %></title>
-
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/foundation/5.5.1/css/foundation.min.css">
-
-    <![endif]-->
+    <% include partials/page/head.ejs %>
 </head>
-<body>
+
+<body class="<%= classname %>">
+
+    <header><% include partials/page/head.ejs %></header>
+
 <div class="row">
-<h1>Hello, world!</h1>
+    <h1><%= pagetitle %>--<%= title %></h1>
 
-<p>wfewverwfhbceklwc bkefhjwbcv efklwbcjdjkcn.dwkc</p>
+    <p>wfewverwfhbceklwc bkefhjwbcv efklwbcjdjkcn.dwkc</p>
 
-<ul>
-    <% for(var i=0; i<users.length ;i++){%>
+<% if (typeof(users) !== 'undefined'){ %>
+    <ul>
 
-    <li><%= users[i]%></li>
+        <% for(var i = 0; i<users.length; i++){ %>
+        <li><%= users[i] %></li>
 
-    <%    }%>
+        <% } %>
 
-</ul>
+    </ul>
+
+<% } %>
 
 </div>
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
-<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/js/bootstrap.min.js"></script></body>
+    <% include partials/page/footer.ejs %>
+    <% include partials/page/jsdefaults.ejs %>
+
+</body>
 </html>
 
-
+<!--DEBUG=rouxmeet:* ./bin/www-->
+<!--cd rouxmeet && npm install-->
 
 
 
