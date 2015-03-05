@@ -1,0 +1,32 @@
+body{
+    background-color: #AFAFDC;
+
+}
+
+input {
+    width: 100%;
+}
+
+h1{
+    text-align: center;
+}
+
+#row1{
+    background: url('/images/main-img.jpg');
+    height:600px;
+}
+
+#row2{
+    background: #B7D3F2;
+
+}
+
+
+#search_box {
+    padding: 0 10%;
+    opacity: 0.8;
+}
+
+#search_box:hover{
+    opacity: 1;
+}

@@ -1,18 +1,26 @@
+var http = require('http');
 var express = require('express');
 var router = express.Router();
+var url = require('url');
+
 
 /* GET home page. */
+
 router.get('/', function(req, res, next) {
-  res.render('index', { title: 'Break the ice',
-                        classname: 'breaktheice.com'
-                      });
+
+  res.render('index',{title: 'Home',
+                      classname: 'home'})
+
 });
 
-router.get('/mountainpage',function(req,res){
+router.get('/mtn:mountainpage',function(req,res){
+
    res.render('index',{title: 'Mountain Info',
-                       classname: 'mountain'});
+                       classname: 'mountain',
+                       obj:req.params.mountainpage});
 
 });
 
 
 module.exports = router;
+

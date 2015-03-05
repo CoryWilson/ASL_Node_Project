@@ -3,12 +3,12 @@ var path = require('path');
 var logger = require('morgan');
 var cookieParser = require('cookie-parser');
 var bodyParser = require('body-parser');
+var mysql      = require('mysql');
 
 var routes = require('./routes/index');
 
 
 var app = express();
-
 // view engine setup
 app.set('views', path.join(__dirname, 'views'));
 app.set('view engine', 'ejs');
@@ -23,6 +23,14 @@ app.use(express.static(path.join(__dirname, 'public')));
 
 app.use('/', routes);
 
+app.use(bodyParser()); 
+app.post('/register', function(req, res){
+
+  console.log(req.body.username);
+  console.log(req.body.email);
+  console.log(req.body.password);
+
+});
 
 // catch 404 and forward to error handler
 app.use(function(req, res, next) {
@@ -53,6 +61,38 @@ app.use(function(err, req, res, next) {
     message: err.message,
     error: {}
   });
+});
+
+/*
+//MongoDB Stuff
+var MongoClient = require('mongodb').MongoClient
+  , assert = require('assert');
+
+// Connection URL
+var url = 'mongodb://localhost:27018/ADB';
+// Use connect method to connect to the Server
+MongoClient.connect(url, function(err, db) {
+  assert.equal(null, err);
+  console.log("Connected correctly to server & MongoDB");
+
+  db.close();
+});*/
+
+var connection = mysql.createConnection({
+  user     : 'root',
+  password : 'root',
+  host     : 'localhost',
+  port: '8889',
+  database : 'asl_node'
+});
+
+connection.connect(function(err) {
+  if (err) {
+    console.error('error connecting: ' + err.stack);
+    return;
+  }
+
+  console.log('connected as id ' + connection.threadId);
 });
 
 
