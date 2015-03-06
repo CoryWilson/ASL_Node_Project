@@ -4,12 +4,25 @@ var express = require('express');
 var router = express.Router();
 var url = require('url');
 var request = require('request');
-request('http://api.powderlin.es/station/791:WA:SNTL?start_date=2013-01-15&end_date=2013-01-15', function (error, response, body) {
-  if (!error && response.statusCode == 200) {
-    console.log(body) // Show the HTML for the Google homepage. 
-  }
-})
 
+
+router.get('/mountain',function(req,res){
+	var plAPI = 'http://api.powderlin.es/station/791:WA:SNTL?start_date=2013-01-15&end_date=2013-01-15';
+   	request(plAPI, function (error, response, body) {
+		  if (!error && response.statusCode == 200) {
+		    var parsedJSON = JSON.parse(body); // Show the HTML for the Google homepage. 
+		  	// console.log(parsedJSON.station_information.elevation);
+		  	// console.log(parsedJSON.station_information.name);
+		  	res.render('mountain',{title: 'Mountain Info',
+                       classname: 'mountain',
+                       page: 'mountain',
+                       name: parsedJSON.station_information.name
+                   	});
+		  }
+	});
+   	
+
+});
 
 /* GET home page. */
 router.get('/', function(req, res, next) {
@@ -17,15 +30,6 @@ router.get('/', function(req, res, next) {
   res.render('index',{title: 'Home | Mountain Reports',
                       classname: 'home',
                       page: 'home'})
-
-});
-
-router.get('/mtn',function(req,res){
-	var elevation = powderlinesJSON.station_information.elevation;
-   res.render('mountain',{title: 'Mountain Info',
-                       classname: 'mountain',
-                       page: 'mountain',
-                       elv: elevation});
 
 });
 
