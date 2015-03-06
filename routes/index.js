@@ -8,7 +8,7 @@ var url = require('url');
 
 router.get('/', function(req, res, next) {
 
-  res.render('index',{title: 'Home',
+  res.render('index',{title: 'Home | Mountain Reports',
                       classname: 'home'})
 
 });
