@@ -16,7 +16,8 @@ router.get('/mountain',function(req,res){
 		  	res.render('mountain',{title: 'Mountain Info',
                        classname: 'mountain',
                        page: 'mountain',
-                       name: parsedJSON.station_information.name
+                       name: parsedJSON.station_information.name,
+                       
                    	});
 		  }
 	});
