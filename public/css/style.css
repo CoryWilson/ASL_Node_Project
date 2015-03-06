@@ -10,6 +10,7 @@ $white: #fffbff;
 
 body{
     background-color: #fffbff;
+    font-family: 'helvetica neue',helvetica,verdana,sans-serif;
 }
 
 
@@ -28,7 +29,7 @@ button {
 	background: none;
 	color: #000;
 }
-button:hover {
+button:hover, button:active, button:visited {
 	background: #242038;
 	color: #fff;
 }
