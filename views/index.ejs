@@ -1,20 +1,23 @@
 <!DOCTYPE html>
 <html>
-  <head>
-   <% include head.ejs %>
-  </head>
+<head>
+  <% include partials/page/head.ejs %>
+</head>
   <body class='<%=classname %>'>
-  <% include header.ejs %>
+    
+    <% include header.ejs %>
 
-  <div id="row1" class="row">
-      <h1><%= title %></h1>
-
+    <div class="jumbotron small-12 small-centered columns">
+      <!-- <h1><%= title %></h1> -->
       <% include search.ejs %>
-  </div>
+    </div>
 
-  <div id="row2" class="row">
+    <div class="registerForm small-11 small-centered medium-10 large-8 columns">
       <% include signUpForm.ejs %>
-  </div>
+    </div>
+
+    <% include partials/page/footer.ejs %>
+    <% include partials/page/jsdefaults.ejs %>
 
   </body>
 </html>
