@@ -4,8 +4,6 @@ var router = express.Router();
 var url = require('url');
 
 
-/* GET home page. */
-
 router.get('/', function(req, res, next) {
 
   res.render('index',{title: 'Home | Mountain Reports',
@@ -13,11 +11,11 @@ router.get('/', function(req, res, next) {
 
 });
 
-router.get('/mtn:mountainpage',function(req,res){
+router.get('/mtn',function(req,res){
 
    res.render('index',{title: 'Mountain Info',
-                       classname: 'mountain',
-                       obj:req.params.mountainpage});
+                       classname: 'mountain'
+                       });
 
 });
 
