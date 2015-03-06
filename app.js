@@ -24,13 +24,13 @@ app.use(express.static(path.join(__dirname, 'public')));
 app.use('/', routes);
 
 app.use(bodyParser()); 
-app.post('/register', function(req, res){
+// app.post('/processLogin', function(req, res){
 
-  console.log(req.body.username);
-  console.log(req.body.email);
-  console.log(req.body.password);
+//   console.log(req.body.username);
+//   console.log(req.body.email);
+//   console.log(req.body.password);
 
-});
+// });
 
 // catch 404 and forward to error handler
 app.use(function(req, res, next) {
