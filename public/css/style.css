@@ -53,10 +53,10 @@ input.roundify {
 	overflow: hidden;
 }
 
-.registerForm {
+.registerForm, .loginForm {
 	margin: 30px;
 	overflow: hidden;
 }
-.registerForm form {
+.registerForm form, .loginForm form {
 	overflow: hidden;
 }
